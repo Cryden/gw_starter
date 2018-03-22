@@ -1,0 +1,16 @@
+source: './source'
+dest: './public'
+
+dev:
+  style:
+    sourcemap: true
+
+prod: 
+  style:
+    sourcemap: false
+
+environments:
+  default:
+    - dev
+  static:
+    - prod

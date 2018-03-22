@@ -1,0 +1,30 @@
+{
+  "name": "gw_starter",
+  "version": "0.0.1",
+  "description": "gulp+webpack starter kit",
+  "main": "index.js",
+  "repository": "https://github.com/Cryden/gw_starter.git",
+  "author": "CRYDEsigN <Cryden_da@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "config-yml": "^0.8.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-css-useref": "^0.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uncss": "^1.0.6",
+    "path": "^0.12.7",
+    "require-dir": "^1.0.0",
+    "standard": "^11.0.1",
+    "webpack": "^4.1.1",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {}
+}
