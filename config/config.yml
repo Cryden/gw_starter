@@ -2,15 +2,12 @@ source: './source'
 dest: './public'
 
 dev:
-  style:
-    sourcemap: true
 
-prod: 
-  style:
-    sourcemap: false
+production:
+  production: true
 
 environments:
   default:
     - dev
   static:
-    - prod
+    - production

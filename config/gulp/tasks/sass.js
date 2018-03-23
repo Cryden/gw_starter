@@ -13,32 +13,13 @@ const gulpif = require('gulp-if')
 const minify = require('gulp-clean-css')
 const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
-const uncss = require('gulp-uncss')
 const groupmedia = require('gulp-group-css-media-queries')
-const cssUseref = require('gulp-css-useref')
-
-// Configiration for gulp-uncss plugin.
-const unCssIgnore = [
-  /(#|\.)fancybox(-[a-zA-Z]+)?/,
-  /tooltip/,
-  '.modal',
-  '.panel',
-  '.active',
-  '.hide',
-  '.show',
-  '.fade',
-  '.fade.in',
-  '.collapse',
-  '.collapse.in',
-  '.navbar-collapse',
-  '.navbar-collapse.in',
-  '.collapsing'
-]
+// const cssUseref = require('gulp-css-useref')
 
 function style () {
   return gulp
     .src(path.join(config.source, 'sass', '**/*.{scss,sass}'))
-    .pipe(gulpif(config.style.sourcemap, sourcemaps.init()))
+    .pipe(gulpif(!config.production, sourcemaps.init()))
     .pipe(plumber({
       errorHandler: notify.onError({
         title: 'Sass Error',
@@ -50,7 +31,8 @@ function style () {
       browsers: ['last 3 version']
     }))
     .pipe(groupmedia())
-    .pipe(gulpif(config.style.sourcemap, sourcemaps.write()))
+    .pipe(gulpif(!config.production, sourcemaps.write()))
+    .pipe(gulpif(config.production, minify()))
     .pipe(gulp.dest(path.join(config.dest, 'css')))
     .pipe(browserSync.reload({
       stream: true
