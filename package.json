@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "config-yml": "^0.8.0",
+    "config-yml": "https://github.com/Cryden/config",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
@@ -26,5 +26,7 @@
     "webpack": "^4.1.1",
     "yargs": "^11.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }

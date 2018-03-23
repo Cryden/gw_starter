@@ -36,10 +36,10 @@ const unCssIgnore = [
 ]
 
 function style () {
-  console.log(config.dest)
+  console.log(config)
   return gulp
     .src(path.join(config.source, 'sass', '**/*.{scss,sass}'))
-    .pipe(gulpif(config.sass.sourcemap, sourcemaps.init()))
+    .pipe(gulpif(config.style.sourcemap, sourcemaps.init()))
     .pipe(plumber({
       errorHandler: notify.onError({
         title: 'Sass Error',
@@ -51,7 +51,7 @@ function style () {
       browsers: ['last 3 version']
     }))
     .pipe(groupmedia())
-    .pipe(gulpif(config.sass.sourcemap, sourcemaps.write()))
+    .pipe(gulpif(config.style.sourcemap, sourcemaps.write()))
     .pipe(gulp.dest(path.join(config.dest, 'css')))
     .pipe(browserSync.reload({
       stream: true
