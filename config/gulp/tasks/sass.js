@@ -3,7 +3,7 @@
  */
 
 const gulp = require('gulp')
-const config = require('config-yml')
+const config = require('node-config-yaml')
 const browserSync = require('browser-sync')
 const path = require('path')
 const notify = require('gulp-notify')
@@ -36,7 +36,6 @@ const unCssIgnore = [
 ]
 
 function style () {
-  console.log(config)
   return gulp
     .src(path.join(config.source, 'sass', '**/*.{scss,sass}'))
     .pipe(gulpif(config.style.sourcemap, sourcemaps.init()))

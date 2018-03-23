@@ -921,26 +921,6 @@ concat-stream@^1.5.0, concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-config-yml@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/config-yml/-/config-yml-0.8.0.tgz#889f8662ae177f0f3908ebef5340d680ae9066f0"
-  dependencies:
-    js-yaml "^3.6.1"
-    lodash "^4.13.1"
-    moment "^2.13.0"
-    shelljs "^0.7.0"
-    yargs "^4.7.1"
-
-"config-yml@https://github.com/Cryden/config":
-  version "0.8.0"
-  resolved "https://github.com/Cryden/config#4cfb9de2f73a912a5ee50da97261340391d76e97"
-  dependencies:
-    js-yaml "^3.6.1"
-    lodash "^4.13.1"
-    moment "^2.13.0"
-    shelljs "^0.7.0"
-    yargs "^4.7.1"
-
 connect-history-api-fallback@^1.1.0, connect-history-api-fallback@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/connect-history-api-fallback/-/connect-history-api-fallback-1.5.0.tgz#b06873934bc5e344fef611a196a6faae0aee015a"
@@ -2388,12 +2368,12 @@ gulp-plumber@^1.2.0:
     through2 "^2.0.3"
 
 gulp-sass@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-3.1.0.tgz#53dc4b68a1f5ddfe4424ab4c247655269a8b74b7"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-3.2.0.tgz#1997e6e722a5e83d6dc227d1ce260ee7a9c08b8b"
   dependencies:
     gulp-util "^3.0"
     lodash.clonedeep "^4.3.2"
-    node-sass "^4.2.0"
+    node-sass "^4.8.1"
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
@@ -3741,6 +3721,16 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
+node-config-yaml@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/node-config-yaml/-/node-config-yaml-0.0.7.tgz#6a8960a5130383714f83383575f13fddbc57372f"
+  dependencies:
+    js-yaml "^3.6.1"
+    lodash "^4.13.1"
+    moment "^2.13.0"
+    shelljs "^0.7.0"
+    yargs "^4.7.1"
+
 node-fetch@^1.0.1:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
@@ -3819,7 +3809,7 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-sass@^4.2.0:
+node-sass@^4.8.1:
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.8.3.tgz#d077cc20a08ac06f661ca44fb6f19cd2ed41debb"
   dependencies:
@@ -5832,8 +5822,8 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-map "~0.6.1"
 
 webpack@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.1.1.tgz#44e4d6a869dd36fdfc0b227f9bd865a4bccfd81c"
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.2.0.tgz#a4f80807651a0e611bb09609600dc266262efcc1"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^3.0.0"
@@ -5998,8 +5988,8 @@ yargs@6.4.0:
     yargs-parser "^4.1.0"
 
 yargs@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.0.0.tgz#c052931006c5eee74610e5fc0354bedfd08a201b"
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.1.0.tgz#90b869934ed6e871115ea2ff58b03f4724ed2d77"
   dependencies:
     cliui "^4.0.0"
     decamelize "^1.1.1"
