@@ -14,7 +14,7 @@ const htmlbeautify = require('gulp-html-beautify')
 
 function renderPug () {
   return gulp
-    .src(path.join(config.source, 'pug', '*.pug'))
+    .src(path.resolve(config.source, 'pug', '*.pug'))
     .pipe(plumber({
       errorHandler: notify.onError({
         title: 'Pug Error',
@@ -23,7 +23,7 @@ function renderPug () {
     }))
     .pipe(pug())
     .pipe(htmlbeautify())
-    .pipe(gulp.dest(path.join(config.dest)))
+    .pipe(gulp.dest(path.resolve(config.dest)))
     .pipe(browserSync.reload({
       stream: true
     }))

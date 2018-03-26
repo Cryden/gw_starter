@@ -18,7 +18,7 @@ const groupmedia = require('gulp-group-css-media-queries')
 
 function style () {
   return gulp
-    .src(path.join(config.source, 'sass', '**/*.{scss,sass}'))
+    .src(path.resolve(config.source, 'sass', '**/*.{scss,sass}'))
     .pipe(gulpif(!config.production, sourcemaps.init()))
     .pipe(plumber({
       errorHandler: notify.onError({

@@ -2,7 +2,7 @@ source: './source'
 dest: './public'
 
 dev:
-
+  production: false
 production:
   production: true
 
