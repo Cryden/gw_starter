@@ -1,8 +1,5 @@
 const gulp = require('gulp')
-const requireDir = require('require-dir')
+const HubRegistry = require('gulp-hub')
 
-var dir = requireDir('./config/gulp/tasks')
-
-gulp.task('dir', () => {
-  console.log(dir)
-})
+var hub = new HubRegistry(['config/gulp/tasks/*.js'])
+gulp.registry(hub)

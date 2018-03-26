@@ -4,7 +4,6 @@
 
 const gulp = require('gulp')
 const config = require('node-config-yaml')
-const browserSync = require('browser-sync')
 const path = require('path')
 const notify = require('gulp-notify')
 const plumber = require('gulp-plumber')
@@ -35,9 +34,6 @@ function style () {
     .pipe(gulpif(!config.production, sourcemaps.write()))
     .pipe(gulpif(config.production, minify()))
     .pipe(gulp.dest(path.join(config.dest, 'css')))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
 }
 
 gulp.task('sass', style)
