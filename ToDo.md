@@ -8,7 +8,9 @@ CSS
 
 > https://github.com/shutterstock/postcss-copy-assets
   
-- extract CSS Properties for Theming (https://www.npmjs.com/package/style-extract)
+- extract CSS Properties for Theming 
+
+> https://www.npmjs.com/package/style-extract
 
 JS
 
@@ -30,7 +32,13 @@ PWA
 
 - Add PWA support
 
+> https://www.npmjs.com/package/sw-precache
+
 FEATURES
 
-- https://github.com/slushjs/gulp-install (Auto install dependencies)
+> https://github.com/slushjs/gulp-install (Auto install dependencies)
+
+LINTING
+
+> https://www.npmjs.com/package/gulp-standard
 
