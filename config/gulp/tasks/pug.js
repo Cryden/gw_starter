@@ -1,13 +1,8 @@
+/* global gulp config path plumber notify browserSync */
+
 /**
  * Build HTML
  */
-
-const gulp = require('gulp')
-const config = require('node-config-yaml')
-const browserSync = require('browser-sync')
-const path = require('path')
-const plumber = require('gulp-plumber')
-const notify = require('gulp-notify')
 
 const pug = require('gulp-pug')
 const htmlbeautify = require('gulp-html-beautify')

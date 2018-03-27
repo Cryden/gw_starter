@@ -1,12 +1,8 @@
+/* global gulp config path plumber notify browserSync */
+
 /**
  * Build CSS with Sass
  */
-
-const gulp = require('gulp')
-const config = require('node-config-yaml')
-const path = require('path')
-const notify = require('gulp-notify')
-const plumber = require('gulp-plumber')
 
 const autoprefixer = require('gulp-autoprefixer')
 const gulpif = require('gulp-if')
@@ -34,6 +30,9 @@ function style () {
     .pipe(gulpif(!config.production, sourcemaps.write()))
     .pipe(gulpif(config.production, minify()))
     .pipe(gulp.dest(path.join(config.dest, 'css')))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 }
 
 gulp.task('sass', style)

@@ -1,11 +1,9 @@
+/* global gulp browserSync  */
+
 /**
  * Browser Sync & webpack middlewares
  */
 
-const gulp = require('gulp')
-const config = require('node-config-yaml')
-const path = require('path')
-const browserSync = require('browser-sync').create()
 const webpack = require('webpack')
 const webpackConfig = require('./../../webpack/webpack.dev')
 const webpackDevMiddleware = require('webpack-dev-middleware')
@@ -13,7 +11,7 @@ const webpackHotMiddleware = require('webpack-hot-middleware')
 
 const browserSyncConfig = {}
 
-function liveReload () {
+function liveReload (done) {
   var webpackCompiler = webpack(webpackConfig)
 
   browserSyncConfig.server = {
@@ -32,7 +30,7 @@ function liveReload () {
   ]
 
   browserSync.init(browserSyncConfig)
-  gulp.watch(path.resolve(config.source, 'js', '*')).on('change', () => browserSync.reload())
+  done()
 }
 
 gulp.task('browser-sync', liveReload)

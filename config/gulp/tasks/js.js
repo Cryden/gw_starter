@@ -1,4 +1,5 @@
-const gulp = require('gulp')
+/* global gulp  */
+
 const webpack = require('webpack')
 const webpackConfig = require('./../../webpack/webpack.prod')
 const gutil = require('gulp-util')

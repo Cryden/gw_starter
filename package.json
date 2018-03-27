@@ -1,6 +1,6 @@
 {
   "name": "gw_starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "gulp+webpack starter kit",
   "main": "index.js",
   "repository": "https://github.com/Cryden/gw_starter.git",
@@ -17,7 +17,6 @@
     "gulp-css-useref": "^0.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-html-beautify": "^1.0.1",
-    "gulp-hub": "github:frankwallis/gulp-hub#registry-init",
     "gulp-if": "^2.0.2",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
