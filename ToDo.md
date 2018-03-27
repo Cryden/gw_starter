@@ -2,7 +2,12 @@ CSS
 
 - inject CSS in header (Google Speed Insight)
 - unused CSS
-- export CSS assets (fonts, images)
+- export CSS assets (fonts, images) 
+
+> https://www.npmjs.com/package/postcss-font-grabber
+
+> https://github.com/shutterstock/postcss-copy-assets
+  
 - extract CSS Properties for Theming (https://www.npmjs.com/package/style-extract)
 
 JS
