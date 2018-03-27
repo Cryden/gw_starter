@@ -1,5 +1,5 @@
-const config = require('node-config-yaml')
-const path = require('path')
+/* global path config */
+
 const webpack = require('webpack')
 
 const webpackConfig = {
