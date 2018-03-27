@@ -3,6 +3,7 @@ CSS
 - inject CSS in header (Google Speed Insight)
 - unused CSS
 - export CSS assets (fonts, images)
+- extract CSS Properties for Theming (https://www.npmjs.com/package/style-extract)
 
 JS
 
@@ -23,3 +24,8 @@ IMAGES
 PWA
 
 - Add PWA support
+
+FEATURES
+
+- https://github.com/slushjs/gulp-install (Auto install dependencies)
+
