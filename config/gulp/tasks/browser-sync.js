@@ -1,4 +1,4 @@
-/* global gulp browserSync  */
+/* global gulp browserSync config */
 
 /**
  * Browser Sync & webpack middlewares
