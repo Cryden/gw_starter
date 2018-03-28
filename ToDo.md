@@ -24,6 +24,8 @@ FONTS
 
 - Add SVG icon fonts support
 
+> https://www.npmjs.com/package/gulp-fontcustom
+
 IMAGES
 
 - Add Image optimization
