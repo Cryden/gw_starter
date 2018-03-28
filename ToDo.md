@@ -15,6 +15,10 @@ CSS
 
 > https://www.npmjs.com/package/style-extract
 
+Add normalize.css as reset
+
+> https://www.npmjs.com/package/node-normalize-scss
+
 JS
 
 - Extract CSS from Vue
