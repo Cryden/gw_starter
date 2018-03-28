@@ -45,7 +45,13 @@ PWA
 
 FEATURES
 
-> https://github.com/slushjs/gulp-install (Auto install dependencies)
+- Auto install dependencies
+
+> https://github.com/slushjs/gulp-install ()
+
+- Google Speed Insight
+
+> https://www.npmjs.com/package/psi
 
 LINTING
 
