@@ -1,6 +1,9 @@
 CSS
 
 - inject CSS in header (Google Speed Insight)
+
+> https://www.npmjs.com/package/critical
+
 - unused CSS
 - export CSS assets (fonts, images) 
 
