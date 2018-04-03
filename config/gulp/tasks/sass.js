@@ -13,6 +13,7 @@ const groupmedia = require('gulp-group-css-media-queries')
 // const cssUseref = require('gulp-css-useref')
 
 function style () {
+  console.log(require('node-normalize-scss').includePaths)
   return gulp
     .src(path.resolve(config.source, 'sass', '**/*.{scss,sass}'))
     .pipe(gulpif(!config.production, sourcemaps.init()))
@@ -22,7 +23,9 @@ function style () {
         message: 'Error: <%= error.message %>'
       })
     }))
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(autoprefixer({
       browsers: ['last 3 version']
     }))
