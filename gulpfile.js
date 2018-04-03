@@ -1,7 +1,7 @@
-/* global gulp */
+/* global gulp config */
 
 global.gulp = require('gulp')
-global.config = require('node-config-yaml')
+global.config = require('node-config-yaml').load('config/config.yml')
 global.browserSync = require('browser-sync')
 global.path = require('path')
 global.plumber = require('gulp-plumber')

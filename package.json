@@ -26,7 +26,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uncss": "^1.0.6",
     "gulp-util": "^3.0.8",
-    "node-config-yaml": "^0.0.7",
+    "node-config-yaml": "^0.1.0",
     "path": "^0.12.7",
     "require-dir": "^1.0.0",
     "standard": "^11.0.1",

@@ -1,6 +1,5 @@
 source: './source'
 dest: './public'
-production: false
 
 development:
 
