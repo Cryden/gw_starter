@@ -1,4 +1,4 @@
-/* global gulp config path plumber notify browserSync */
+/* global gulp config path plumber notify browserSync gulpif */
 
 /**
  * Build HTML
@@ -17,7 +17,7 @@ function renderPug () {
       })
     }))
     .pipe(pug())
-    .pipe(htmlbeautify())
+    .pipe(gulpif(config.args.development, htmlbeautify()))
     .pipe(gulp.dest(path.resolve(config.dest)))
     .pipe(browserSync.reload({
       stream: true

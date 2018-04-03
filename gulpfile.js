@@ -6,9 +6,9 @@ global.browserSync = require('browser-sync')
 global.path = require('path')
 global.plumber = require('gulp-plumber')
 global.notify = require('gulp-notify')
+global.gulpif = require('gulp-if')
 
 const requireDir = require('require-dir')
-
 requireDir('config/gulp/tasks', { recurse: true })
 
 gulp.task('build', gulp.series(gulp.parallel('pug', 'js'), 'sass'))
