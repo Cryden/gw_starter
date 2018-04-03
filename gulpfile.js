@@ -1,4 +1,4 @@
-/* global gulp config */
+/* global gulp */
 
 global.gulp = require('gulp')
 global.config = require('node-config-yaml').load('config/config.yml')

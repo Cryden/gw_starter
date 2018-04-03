@@ -1,6 +1,6 @@
 {
   "name": "gw_starter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "gulp+webpack starter kit (support Sass, Pug, Vue)",
   "main": "index.js",
   "repository": "https://github.com/Cryden/gw_starter.git",
