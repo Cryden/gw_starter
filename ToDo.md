@@ -27,6 +27,10 @@ HTML
 
 - Minify HTML for Production
 
+> https://www.npmjs.com/package/gulp-htmlmin
+
+- W3C validation
+
 FONTS
 
 - Add SVG icon fonts support
