@@ -12,11 +12,11 @@ CSS
 
 > https://github.com/shutterstock/postcss-copy-assets
   
-- extract CSS Properties for Theming 
+- [ ] extract CSS Properties for Theming 
 
 > https://www.npmjs.com/package/style-extract
 
-- add normalize.css as reset
+- [ ] add normalize.css as reset
 
 > https://www.npmjs.com/package/node-normalize-scss
 
@@ -24,13 +24,17 @@ JS
 
 - Extract CSS from Vue
 
+- [ ] checking JavaScript code with the standard syntax
+
+  Use: [Standard](https://www.npmjs.com/package/gulp-standard)
+
 HTML
 
-- Minify HTML for Production
+- [ ] Minify HTML for Production
 
 > https://www.npmjs.com/package/gulp-htmlmin
 
-- W3C validation
+- [ ] W3C validation
 
 FONTS
 
@@ -57,6 +61,10 @@ FEATURES
 - Google Speed Insight
 
 > https://www.npmjs.com/package/psi
+
+- [ ] show a help message for your gulpfile.js.
+
+  Use: [Showhelp](https://www.npmjs.com/package/gulp-showhelp)
 
 LINTING
 
