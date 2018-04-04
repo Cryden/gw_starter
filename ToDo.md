@@ -8,21 +8,18 @@ CSS
 
 - [ ] export CSS assets (fonts, images) 
 
-> https://www.npmjs.com/package/postcss-font-grabber
-
-> https://github.com/shutterstock/postcss-copy-assets
+ Use: [PostCSS-font-grabber](https://www.npmjs.com/package/postcss-font-grabber)
+      [PostCSS-copy-assets](https://github.com/shutterstock/postcss-copy-assets)
   
 - [ ] extract CSS Properties for Theming 
 
-> https://www.npmjs.com/package/style-extract
+  Use: [Style-extract](https://www.npmjs.com/package/style-extract)
 
 - [ ] add normalize.css as reset
 
-> https://www.npmjs.com/package/node-normalize-scss
-
 JS
 
-- Extract CSS from Vue
+- [ ] Extract CSS from Vue
 
 - [ ] checking JavaScript code with the standard syntax
 
@@ -32,41 +29,36 @@ HTML
 
 - [ ] Minify HTML for Production
 
-> https://www.npmjs.com/package/gulp-htmlmin
+  Use: [Gulp-htmlmin](https://www.npmjs.com/package/gulp-htmlmin)
 
 - [ ] W3C validation
 
 FONTS
 
-- Add SVG icon fonts support
+- [ ] Add SVG icon fonts support
 
-> https://www.npmjs.com/package/gulp-fontcustom
+  Use: [Gulp-fontcustom](https://www.npmjs.com/package/gulp-fontcustom)
 
 IMAGES
 
-- Add Image optimization
+- [ ] Add Image optimization
 
 PWA
 
-- Add PWA support
+- [ ] Add PWA support
 
-> https://www.npmjs.com/package/sw-precache
+  Use: [SW-precache](https://www.npmjs.com/package/sw-precache)
 
 FEATURES
 
-- Auto install dependencies
+- [ ] Auto install dependencies
 
-> https://github.com/slushjs/gulp-install ()
+  Use: [Gulp-install](https://github.com/slushjs/gulp-install)
 
-- Google Speed Insight
+- [ ] Google Speed Insight
 
-> https://www.npmjs.com/package/psi
+  Use: [PSI](https://www.npmjs.com/package/psi)
 
 - [ ] show a help message for your gulpfile.js.
 
   Use: [Showhelp](https://www.npmjs.com/package/gulp-showhelp)
-
-LINTING
-
-> https://www.npmjs.com/package/gulp-standard
-
