@@ -2,7 +2,9 @@ CSS
 
 - [x] inject CSS in header (Google Speed Insight)
 
-    - [Critcal](https://www.npmjs.com/package/critical)
+Use [Critical](https://www.npmjs.com/package/critical)
+
+Task: 'critical'
 
 - [ ] unused CSS
 
