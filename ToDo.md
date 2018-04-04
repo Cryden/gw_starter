@@ -4,10 +4,6 @@ CSS
 
   Use: [Critical](https://www.npmjs.com/package/critical)
 
-``
-gulp 'critical'
-``
-
 - [ ] unused CSS
 
 - [ ] export CSS assets (fonts, images) 
