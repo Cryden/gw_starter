@@ -1,10 +1,12 @@
 CSS
 
-- [x] inject CSS in header (Google Speed Insight)
+- [x] inject Critical CSS in header 
 
-Use [Critical](https://www.npmjs.com/package/critical)
+  Use: [Critical](https://www.npmjs.com/package/critical)
 
-Task: 'critical'
+``
+gulp 'critical'
+``
 
 - [ ] unused CSS
 
