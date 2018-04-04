@@ -1,11 +1,12 @@
 CSS
 
-- inject CSS in header (Google Speed Insight)
+- [x] inject CSS in header (Google Speed Insight)
 
-> https://www.npmjs.com/package/critical
+    - [Critcal](https://www.npmjs.com/package/critical)
 
-- unused CSS
-- export CSS assets (fonts, images) 
+- [ ] unused CSS
+
+- [ ] export CSS assets (fonts, images) 
 
 > https://www.npmjs.com/package/postcss-font-grabber
 
