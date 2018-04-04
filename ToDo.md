@@ -8,8 +8,8 @@ CSS
 
 - [ ] export CSS assets (fonts, images) 
 
- Use: [PostCSS-font-grabber](https://www.npmjs.com/package/postcss-font-grabber)
-      [PostCSS-copy-assets](https://github.com/shutterstock/postcss-copy-assets)
+  Use: [PostCSS-font-grabber](https://www.npmjs.com/package/postcss-font-grabber), 
+  [PostCSS-copy-assets](https://github.com/shutterstock/postcss-copy-assets)
   
 - [ ] extract CSS Properties for Theming 
 
