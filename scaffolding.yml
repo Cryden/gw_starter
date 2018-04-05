@@ -1,0 +1,11 @@
+source: source
+public: dist
+
+sass:
+  ext: '**/*.{sass|scss}'
+  sourcepath: sass
+  source: ${source}/${sass.sourcepath}/${sass.ext}
+  publicpath: css
+  public: ${public}/${sass.publicpath}
+
+development:

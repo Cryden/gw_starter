@@ -1,5 +1,18 @@
-source: './source'
 dest: './public'
+
+source: './source'
+public: './dist'
+
+sass:
+  sourcepath: sass
+  ext: '**/*.{sass,scss}'
+  source: ${source}/${sass.sourcepath}/${sass.ext}
+  publicpath: css
+  public: ${public}/${sass.publicpath}/
+  plugins:
+    - autoprefixer
+    - groupmedia
+  help: Convert Sass to CSS
 
 development:
 

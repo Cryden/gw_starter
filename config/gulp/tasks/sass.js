@@ -1,4 +1,4 @@
-/* global gulp config path plumber notify browserSync */
+/* global gulp config plumber notify browserSync */
 
 /**
  * Build CSS with Sass
@@ -14,7 +14,7 @@ const groupmedia = require('gulp-group-css-media-queries')
 
 function style () {
   return gulp
-    .src(path.resolve(config.source, 'sass', '**/*.{scss,sass}'))
+    .src(config.sass.source)
     .pipe(gulpif(!config.production, sourcemaps.init()))
     .pipe(plumber({
       errorHandler: notify.onError({
@@ -31,7 +31,7 @@ function style () {
     .pipe(groupmedia())
     .pipe(gulpif(!config.production, sourcemaps.write()))
     .pipe(gulpif(config.production, minify()))
-    .pipe(gulp.dest(path.join(config.dest, 'css')))
+    .pipe(gulp.dest(config.sass.public))
     .pipe(browserSync.reload({
       stream: true
     }))

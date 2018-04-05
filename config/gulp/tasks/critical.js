@@ -10,6 +10,10 @@ gulp.task('critical', function () {
         message: 'Error: <%= error.message %>'
       })
     }))
-    .pipe(critical({inline: true, css: path.join(config.dest, 'css/style.css')}))
+    .pipe(critical({
+      base: '/',
+      inline: true,
+      css: path.join(config.dest, 'css/style.css')
+    }))
     .pipe(gulp.dest(path.join(config.dest)))
 })
