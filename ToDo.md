@@ -62,3 +62,7 @@ FEATURES
 - [ ] show a help message for your gulpfile.js.
 
   Use: [Showhelp](https://www.npmjs.com/package/gulp-showhelp)
+
+- [ ] Static asset revisioning by appending content hash to filenames
+
+  Use: [Gulp-rev](https://www.npmjs.com/package/@hvent/gulp-rev)
